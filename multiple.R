@@ -34,9 +34,6 @@ test <- multiple[-samp, ]
 #---------------------------------------
 #Random forest model
 
-
-
-#We build the random forest model
 library(randomForest)
 
 model2 <- randomForest(formula = yield ~ .,data = train, ntree = 1000, mtry = 5)
@@ -47,19 +44,14 @@ model2 <- randomForest(formula = yield ~ .,data = train, ntree = 1000, mtry = 5)
 #gbm model
 library(gbm)
 library(MASS)
-model3<-gbm(yield~.,data=train)
-
-tidy(model3) model3
-
-library(gbm)
-library(MASS)
 model3<- gbm(yield ~., data = multiple)
 
 
 
 #comparison: since some of the algorithms use training and testing data
-# I  choose to  calculate the square of the error for the test data
-# The model that got the smallest "Residuals", is the better.
+# I choose the  sum of the square of the error for the test data as a criteria
+# The model that got the smallest "Residuals", is the better ( best)..
+
 
 predection1<-predict.lm(model1, newdata = test)
 prediction2 <- predict(model2, newdata = test)
@@ -72,5 +64,3 @@ Residuals3<-sum((prediction3-test$yield)*(prediction3-test$yield))
 
 
 Residuals1;Residuals2;Residuals3
-
-
