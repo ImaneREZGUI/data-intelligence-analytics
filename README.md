@@ -1,13 +1,13 @@
 # Data Intelligence Analytics
 
- Kept in sent gave feel will oh it we. Has pleasure procured men laughing shutters nay. Old insipidity motionless continuing law shy partiality. Depending acuteness dependent eat use dejection. Unpleasing astonished discovered not nor shy. Morning hearted now met yet beloved evening. Has and upon his last here must.
+ The data contain only quantitative variables. The first step is to explore this data using PCA. then applying a multiple regression model( with or without duration variable) 
  
- ## Tite number 1
+ ## The "non linear" algorithm:
  
- Kept in sent gave feel will oh it we. Has pleasure procured men laughing shutters nay. Old insipidity motionless continuing law shy partiality. Depending acuteness dependent eat use dejection. Unpleasing astonished discovered not nor shy. Morning hearted now met yet beloved evening. Has and upon his last here must.
- 
- 
- ## Titel number 3
+I used the Random forest model and the Gradient Boosting machine learning algorithm. I tried to apply the gbm model only on the “train” data, but it is small , hence  I used  the “multiple” data.
  
  
- Kept in sent gave feel will oh it we. Has pleasure procured men laughing shutters nay. Old insipidity motionless continuing law shy partiality. Depending acuteness dependent eat use dejection. Unpleasing astonished discovered not nor shy. Morning hearted now met yet beloved evening. Has and upon his last here must.
+ ## next level approach
+ 
+  the first time I saw the data and get the idea about the goal, first thing came to my mind was the design of experiments, not directly but it is related. Moreover, the approach of "sensitivity analysis" could be more helpful. . 
+
